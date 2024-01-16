@@ -3,8 +3,8 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 [scripts]
-server = "uvicorn main:app --reload --port 8000"
-fmt_fix = "ruff fmt --fix ./app/"
+server = "uvicorn app.main:app --reload --port 8000"
+fmt_fix = "ruff format  ./app/"
 requirement = "pip3 freeze > requirements.txt"
 
 [packages]
